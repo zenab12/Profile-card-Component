@@ -10,26 +10,61 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+     @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;600;700&family=Outfit:wght@300;400;600&display=swap');
+     :root{--Dark-cyan: hsl(185, 75%, 39%); --Very-dark-desaturated-blue: hsl(229, 23%, 23%); --Dark-grayish-blue: hsl(227, 10%, 46%);--Dark-gray: hsl(0, 0%, 89%);--white: #fff}
+     body::before,body::after{position:absolute;z-index:0;content:" ";display:block;background:url(images/bg-pattern-top.svg)center no-repeat; background-size:cover;height: 650px;width:750px;}
+     body::before{top: -85px;left: -140px;}
+     body::after{background:url(images/bg-pattern-bottom.svg) center no-repeat;bottom:-150px;right:-40px;border-radius: 50%;}
+     body{font-family: 'Kumbh Sans', sans-serif;background:var(--Dark-cyan);font-size:18px;display:grid;place-items:center;height:700px;position:relative;z-index:2;overflow: hidden;}
+    
+    figure{width: 350px;height: auto;border-radius: 15px; margin:150px 0px;background: var(--white); position: relative;display: grid;justify-content: center;
+    z-index: 444;}
+    figure .image{position: relative;}
+    figure .image img{min-width: 100%;border-radius: 15px 15px 0px 0px}
+     img.profilePhoto {position: absolute; top: 100px;width: 80px;border-radius: 50%;outline: 5px solid var(--white);justify-self:center;}
+     figure h1 {font-size: 26px;margin-top: 60px;margin-bottom: 5px;color: var(--Very-dark-desaturated-blue);font-weight: 700;text-align: center;}
+     figure span{font-size: 18px;font-weight: 400;text-align: center;display: block;color: var(--Dark-grayish-blue);margin-top: 5px;}
+     figure h1 span{display: inline;color: var(--Dark-grayish-blue);}
+
+     ul.details{display: grid;grid-template-columns: repeat(3, 1fr);justify-items: space-between;list-style: none;width: 100%;padding: 0px;border-top: .4px solid var(--Dark-gray);padding: 15px 0px;margin-bottom: 0px;}
+     ul.details li{font-size: 20px;color:  var(--Very-dark-desaturated-blue);font-weight: 700;text-align: center;}
+    .attribution { font-size:11px;text-align: center;color: var(--white); }
+    .attribution a { color: var(--Dark-gray);}
+
+    @media(max-width: 765px)
+    {
+ body::before,body::after{max-width: 95%;height: 500px;right: 0px;border-radius: 50%;}
+ body::before{left: -50px;}
+
+    }
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+<main>
+  <figure>
+     <div class="image">
+       <img src="images/bg-pattern-card.svg" alt="header">
+     </div>
+     <img src="images/image-victor.jpg" class="profilePhoto" alt="profilephoto">
+     <figcaption>
+       <h1>  Victor Crest <span class="age">26</span></h1>
+       <span class="location">  London </span>
 
-  803K
-  Likes
+       <ul class="details">
+         
+         <li> 80K<span> Followers</span></li>
+         <li> 803K<span> Likes</span></li>
+         <li> 1.4K<span> Photos</span></li>
 
-  1.4K
-  Photos
+       </ul>
+     </figcaption>
+  </figure>
+</main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Zienab Mohamed</a>.
   </div>
 </body>
 </html>
