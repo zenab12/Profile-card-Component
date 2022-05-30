@@ -1,10 +1,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;600;700&family=Outfit:wght@300;400;600&display=swap');
      :root{--Dark-cyan: hsl(185, 75%, 39%); --Very-dark-desaturated-blue: hsl(229, 23%, 23%); --Dark-grayish-blue: hsl(227, 10%, 46%);--Dark-gray: hsl(0, 0%, 89%);--white: #fff}
-     body::before,body::after{position:absolute;z-index:0;content:" ";display:block;background:url(images/bg-pattern-top.svg)center no-repeat; background-size:cover;height: 720px;width:800px;}
+   /*  body::before,body::after{position:absolute;z-index:0;content:" ";display:block;background:url(images/bg-pattern-top.svg)center no-repeat; background-size:cover;height: 720px;width:800px;}
      body::before{top: -300px;left: -140px;}
      body::after{background:url(images/bg-pattern-bottom.svg) center no-repeat;bottom:-370px;right:-80px;border-radius: 50%;}
+*/
      body{font-family: 'Kumbh Sans', sans-serif;background:var(--Dark-cyan);font-size:18px;display:grid;place-items:center;height:700px;position:relative;z-index:2;overflow: hidden;}
-
+     body {
+   background: url("./images/bg-pattern-top.svg") right 50vw bottom 40vh no-repeat, 
+               url("./images/bg-pattern-bottom.svg") 50vw 50vh no-repeat var(--Dark-cyan);    /* <---- Add */
+    }
     figure{width: 350px;height: auto;border-radius: 15px; margin:190px 0px;background: var(--white); position: relative;display: grid;justify-content: center;
     z-index: 444;}
     figure .image{position: relative;}
