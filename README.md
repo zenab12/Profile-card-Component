@@ -21,7 +21,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Screenshot
 <p align="center">
-<img src="https://user-images.githubusercontent.com/78083890/170893167-1886ce46-8cf4-4f48-bd99-9e06951f49ed.png" alt="desktop preview">
+<img src="https://user-images.githubusercontent.com/78083890/171158663-56856ac0-5d27-4c37-bb80-fa67321d87a9.png" alt="desktop preview">
 </p>
 
 
