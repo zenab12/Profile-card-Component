@@ -10,9 +10,11 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What-I-Learned](#What-I-Learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [ Acknowledgments](#Acknowledgments)
 
 ## Overview
 
@@ -38,6 +40,17 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - CSS custom properties
 - Flexbox(Responsive)
 
+### What-I-Learned
+
+- I learned to make multi-background image above body  with background-color instead-of using (::before,::after) pseudo elements 
+
+
+```
+body {
+   background: url("./images/bg-pattern-top.svg") right 50vw bottom 40vh no-repeat, 
+               url("./images/bg-pattern-bottom.svg") 50vw 50vh no-repeat var(--Dark-cyan);    
+    }
+```
 
 ### Continued development
 I will use flexbox and grid template in comming Challenges with Allah willing  in professional way.
@@ -52,3 +65,8 @@ I will use flexbox and grid template in comming Challenges with Allah willing  i
 - Frontend Mentor - [@zenab12](https://www.frontendmentor.io/profile/zenab12)
 - Twitter - [@zenabmo90454136](https://twitter.com/zenabmo90454136)
 - Linkedin -[@zenab-mohamed-23133a1a1](https://www.linkedin.com/in/zenab-mohamed-23133a1a1/)
+
+## Acknowledgments
+
+[Bayoumi-dev](https://www.frontendmentor.io/profile/Bayoumi-dev) helped me to use smart way in making overlay so thanks for him
+
